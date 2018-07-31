@@ -8,6 +8,11 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class MyClient implements Runnable{
+	
+	public static void main(String[] args) {
+		new MyClient().run();
+	}
+	
 	@Override
 	public void run() {
 		try {
