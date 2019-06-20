@@ -157,6 +157,7 @@ public class Test1 {
 		Object obj = class1.newInstance();
 		//根据方法名，方法参数获取到属性,使用invoke反射
 		Method method = class1.getDeclaredMethod("sayPrivate");
+		//打破封装
 		method.setAccessible(true);
 		method.invoke(obj);
 	}
