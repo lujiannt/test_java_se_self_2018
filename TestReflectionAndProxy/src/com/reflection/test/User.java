@@ -24,4 +24,8 @@ public class User {
 	public void nosay() {
 		System.out.println("user no say anything");
 	}
+	
+	private void sayPrivate() {
+		System.out.println("im praivate");
+	}
 }

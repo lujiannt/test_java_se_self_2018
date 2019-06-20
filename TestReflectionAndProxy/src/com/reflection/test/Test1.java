@@ -143,4 +143,21 @@ public class Test1 {
 		method1.invoke(obj);
 	}
 	
+	
+	/**
+	 * 通过反射获取指定私有方法
+	 * @throws Exception
+	 * @author lujian
+	 * @create 2017年4月27日
+	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	@Test
+	public void test6() throws Exception {
+		Class class1 = User.class;
+		Object obj = class1.newInstance();
+		//根据方法名，方法参数获取到属性,使用invoke反射
+		Method method = class1.getDeclaredMethod("sayPrivate");
+		method.setAccessible(true);
+		method.invoke(obj);
+	}
 }
