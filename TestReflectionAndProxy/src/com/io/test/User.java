@@ -12,7 +12,7 @@ public class User {
 	private String name;
 	private int age;
 	
-	public String getName() {
+	public String getName() {	
 		return name;
 	}
 	public void setName(String name) {
